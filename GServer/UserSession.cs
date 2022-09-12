@@ -13,6 +13,7 @@ namespace GServer
         protected override void OnSessionStarted()
         {
             base.OnSessionStarted();
+            
         }
 
         protected override void HandleUnknownRequest(StringRequestInfo requestInfo)

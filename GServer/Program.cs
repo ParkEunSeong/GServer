@@ -26,17 +26,19 @@ namespace GServer
                 Name = "UserServer"
             };
         }
-        static UserServer appServer { get; set; }
+        static AppServer appServer { get; set; }
         [STAThread]
         static void Main(string[] args)
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
-          
+           Application.Run(new MainForm());
+      
         }
 
+
+
         //1.
-     
+
     }
 }

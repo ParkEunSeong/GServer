@@ -72,6 +72,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ECHO.cs" />
+    <Compile Include="Google\FlatBuffers\ByteBuffer.cs" />
+    <Compile Include="Google\FlatBuffers\ByteBufferUtil.cs" />
+    <Compile Include="Google\FlatBuffers\FlatBufferBuilder.cs" />
+    <Compile Include="Google\FlatBuffers\FlatBufferConstants.cs" />
+    <Compile Include="Google\FlatBuffers\IFlatbufferObject.cs" />
+    <Compile Include="Google\FlatBuffers\Offset.cs" />
+    <Compile Include="Google\FlatBuffers\Struct.cs" />
+    <Compile Include="Google\FlatBuffers\Table.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="MainForm.cs">
@@ -95,9 +103,11 @@
     </Compile>
     <None Include="Config\log4net.config" />
     <None Include="Config\log4net.unix.config" />
+    <Content Include="Google\FlatBuffers\flatbuffers.png" />
     <Content Include="log4net.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Google\FlatBuffers\flatbuffers.snk" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -113,6 +123,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Google\Protocol\" />
+    <Folder Include="NewFolder2\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
